@@ -1,0 +1,342 @@
+* {
+  font-family: 'Catamaran', sans-serif !important;
+}
+
+body, h2 {
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  margin: 10px 15px 5px 15px;
+  width: 250px;
+  height: auto;
+}
+
+#status, #timeRem {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  white-space: nowrap;
+}
+
+.headerHome {
+  height: 100px;
+  background-image: url(./home-cover.svg);
+}
+
+.header img {
+  height: 100px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+#tagLine {
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul {
+  font-size: 16px;
+  font-weight: bold;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  margin: 08px;
+}
+
+.extra {
+  font-family: sans-serif;
+  white-space: nowrap;
+  font-style: italic;
+  margin: 3px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.links p {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.button {
+  text-align: center;
+  padding: 08px 14px;
+  border: 2px solid #428DFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #428DFF;
+}
+
+#getAppDiv {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.hr {
+  border: 1px solid #F9F9F9;
+}
+
+.getAppText {
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.androidIcon {
+  width: 100px;
+  height: auto;
+}
+
+.notes {
+  padding: 10px;
+  font-size: 12px;
+  white-space: pre;
+}
+
+
+/* Icons */
+.microphoneIcon {
+  width: 18px;
+  float: left;
+}
+
+.videoIcon {
+  width: 18px;
+  float: left;
+}
+
+.desktopIcon {
+  width: 18px;
+  float: left;
+}
+
+.donateIcon {
+  width: 18px;
+  float: left;
+}
+
+.fileManagerIcon {
+  width: 18px;
+  float: left;
+}
+
+.fileManagerlinkIcon {
+  width: 18px;
+  float: right;
+}
+
+.helpIcon {
+  width: 18px;
+  float: left;
+}
+
+/* Icons - text */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  float: right;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* microphoneSwitchField - Background */
+
+/* #microphoneSwitchDiv {
+  background-color: #F8FAFE;
+  height: 35px;
+  border-radius: 04px;
+} */
+
+/* .microphoneSwitchUl {
+  padding-top: 03px;
+} */
+
+
+/* Buttons */
+
+.buttonRecord {
+  width: 190px;
+  margin: auto;
+}
+
+/* Containers / Divisions */
+
+.profileName {
+  float: left;
+  position: absolute;
+  top: 6%;
+  left: 2%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid #fafafa
+}
+
+.profileDetail {
+  width: 70%;
+  float: right;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.menuHome {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+/* Ul / Li */
+
+.microphoneSwitchUl {
+  display: flex;
+  margin: 0;
+}
+
+.videoSwitchUl {
+  display: flex;
+  margin: 0;
+}
+
+.desktopSwitchUl {
+  display: flex;
+  margin: 0;
+}
+
+.donateUl {
+  display: flex;
+  margin: 0;
+}
+
+.fileManagerUl {
+  display: flex;
+  margin: 0;  
+}
+
+.helpUl {
+  display: flex;
+  margin: 0;  
+}
+
+.menu-li {
+  width: 50%;
+}
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  /* padding: 10px 50px; */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.LogoutButtonContainer {
+  text-align: center;
+  color: #5555ff;
+  cursor: pointer;
+}
+
+.defaultLetters {
+  text-align: center;
+    margin: 6px 0px;
+    font-size: 30px;
+    font-weight: bolder;
+    opacity: 0.4;
+}

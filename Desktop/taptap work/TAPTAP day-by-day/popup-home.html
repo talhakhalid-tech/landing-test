@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Chrome Audio Capture</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headerHome">
+      <div id='profileName' class="profileName">
+        
+      </div>
+      <div class="profileDetail">
+        <h5 id='user-name'>Name</h5>
+      </div>
+    </div>
+    <div class="menuHome">
+      <div id="microphoneSwitchDiv">
+        <ul class="microphoneSwitchUl">
+          <li class="menu-li">
+            <img class="microphoneIcon" src="./microphone.svg" />&nbsp;&nbsp;
+            Audio Recording
+          </li>
+          <li class="menu-li">
+            <label class="switch">
+              <input id='audioCheck' type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div id="videoSwitchDiv">
+        <ul class="videoSwitchUl">
+          <li class="menu-li">
+            <img class="videoIcon" src="./video.svg" />&nbsp;&nbsp; Video
+            Recording
+          </li>
+          <li class="menu-li">
+            <label class="switch">
+              <input id='videoCheck' type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- <br> -->
+      <hr class="hr" />
+
+      <div id="fileManagerDiv">
+        <ul class="fileManagerUl">
+          <li class="menu-li">
+            <img class="fileManagerIcon" src="./folder.svg" />&nbsp;&nbsp; Open
+            File Manager
+          </li>
+          <li class="menu-li">
+            <img class="fileManagerlinkIcon" src="./link.svg" />
+          </li>
+        </ul>
+      </div>
+
+      <div id="donateDiv">
+        <ul class="donateUl">
+          <li class="menu-li">
+            <img class="donateIcon" src="./dollar.svg" />&nbsp;&nbsp;
+            Contribution
+          </li>
+        </ul>
+      </div>
+
+      <div id="helpDiv">
+        <ul class="helpUl">
+          <li class="menu-li">
+            <img class="helpIcon" src="./question.svg" />&nbsp;&nbsp; Help
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      id="startRecording"
+      class="button buttonRecord"
+    >
+      Record
+    </div>
+
+    <div id="status"></div>
+    <div id="timeRem"></div>
+    <div class="LogoutButtonContainer">
+      <a id="logoutButton">Logout</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Audio Capture",
+  "description": "This extension captures the audio on the current tab and saves the output file on your computer when the capture is complete",
+  "version": "1.1.1",
+  "icons": {
+    "128":"icon.png"
+    },
+
+  "browser_action": {
+    "default_icon": "icon-fav.png",
+    "default_popup": "credentials.html",
+    "default_title": "Open Chrome Audio Capture interface"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["./firebase/firebase-app.js", "./contentScript.js",  "./firebase/firebase-auth.js","background.js", "worker.js"],
+    "persistent": true
+  },
+  "content_scripts":[{
+    "matches": ["https://*/*"],
+     "css": ["record-session.css"],
+     "js": ["contentScript.js"]
+     }],
+  "permissions": [
+    "tabs",
+    "tabCapture",
+    "downloads",
+    "storage",
+    "identity",
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "tv-white.svg",
+    "snippet-white.svg",
+    "microphone-white.svg",
+    "record-session.css",
+    "end.svg"
+  ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://www.gstatic.com/* https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "oauth2": {
+    "client_id": "219693997467-ifofibaafihsvojd4ihuccctrtnc46ke.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAimjn15mINkkHTUB6+POGJ7ysA2UYoBehIjvfT6wt1+AVNKXuitMSJEZJHLApRxSJFyne5cdk4k5LA9TugwZLNKQmtgFpNyUVJkyS9eQfjm0pYh5Hyc7wkBH7zA8EPJcwrhYb912Wd2P4VZD5JelUQQAt/SPufAjptvrVlaQZiHhTED0SrGYNPQSjprlZGHlLYQrAS36MJj4Dv4/uj8YoypqqNi0FVGSzMF6zVYQu8GEwYu1KI3vM/ZaqYcaiig1hMUBaLnC9uTR7hH+0XwikQFAld8xj09RGdoaPWSS+2Wgwjh8G9UfrfgJU0QTDKUsdXhy658rPreYPn6Hn/kxeIQIDAQAB",
+  "commands": {
+    "start": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Start Capture"
+    },
+    "stop": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "MacCtrl+Shift+X"
+      },
+      "description": "Stop Capture"
+    }
+  }
+}

@@ -1,0 +1,201 @@
+* {
+  font-family: 'Catamaran', sans-serif !important;
+}
+
+body, h2 {
+  font-family: Ubuntu, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+#getAppDiv {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.hr {
+  border: 1px solid #F9F9F9;
+}
+
+.getAppText {
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.androidIcon {
+  width: 100px;
+  height: auto;
+}
+
+.notes {
+  padding: 10px;
+  font-size: 12px;
+  white-space: pre;
+}
+
+
+/* Icons */
+.microphoneIcon {
+  width: 18px;
+}
+
+.videoIcon {
+  width: 18px;
+}
+
+.desktopIcon {
+  width: 18px;
+}
+
+.snippetIcon {
+  width: 18px;
+}
+
+.endIcon {
+  width: 15px;
+}
+
+
+/* Icons - text */
+
+
+/* Buttons */
+
+.controls {
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.button {
+  text-align: center;
+  padding: 08px 14px;
+  border: 2px solid #428DFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+
+
+/* Containers / Divisions */
+
+.recordHome {
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid #428DFF; */
+}
+
+.controlsContainer {
+  padding-bottom: 30px;
+  width: 50%;
+  margin: auto;
+  bottom: 0;
+  position: absolute;
+  left: 50vh;
+  display: flex;
+}
+
+.controlAudio {
+  padding: 10px;
+  border-radius: 04px;
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid #428DFF; */
+  background: #428DFF;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.controlVideo {
+  padding: 10px;
+  border-radius: 04px;
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid #428DFF; */
+  background: #428DFF;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.controlDesktop {
+  padding: 10px;
+  border-radius: 04px;
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid #428DFF; */
+  background: #428DFF;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.hr-line {
+  margin-left: 30px;
+  border-left: 1px solid #70707050;
+}
+
+.controlSnippet {
+  padding: 10px;
+  border-radius: 04px;
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid #428DFF; */
+  background: #428DFF;
+  color: white;
+  text-align: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.controlEnd {
+  padding: 10px;
+  border-radius: 04px;
+  width: 50px;
+  height: 40px;
+  /* border: 2px solid #428DFF; */
+  background: #428DFF;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.controlAudio, .controlVideo, .controlDesktop, .controlSnippet, .controlEnd:hover {
+  background: #428DFF;
+  color: white;
+}
+
+
+/* Ul / Li */
+
+tul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+tli {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.liIcon {
+  height: 20px;
+  padding-bottom: 05px;
+}

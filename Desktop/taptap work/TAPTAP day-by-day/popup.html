@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Chrome Audio Capture</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+  </head>
+  <body>
+    <div class="header"><img src="./icon.png"/></div>
+    <div id=tagLine>Don't lose your notes during meetings. <br> Heighlight the important stuff in real time without stopping your work.</div>
+    <div id="status"></div>
+    <div id="timeRem"></div>
+    <div class="buttonContainer">
+      <div class="button" onClick="window.location='popup-home.html';">Continue with Google</div>
+      <!-- <div class="button" id="start">Start your trail now</div> -->
+      <!-- <div class="button" id="finish">Save Capture</div>
+      <div class="button" id="cancel">Cancel Capture</div> -->
+    </div>
+    <div id='taptap-video'>
+
+    </div>
+    <div id="getAppDiv">
+      <hr class="hr">
+      <h3 class="getAppText">Available on</h3>
+      <img class="androidIcon" src="./android.svg">
+    </div>
+  </body>
+</html>
+

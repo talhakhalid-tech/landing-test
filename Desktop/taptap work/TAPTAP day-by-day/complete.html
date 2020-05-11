@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Chrome Audio Capture Options</title>
+    <script src="complete.js"></script>
+    <link rel="stylesheet" href="complete.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+  </head>
+  <body>
+    <div class="header"><img src="./icon.png"/></div>
+    <div class="inner">
+      <div class="progress">
+        <label for="progrssContainer">Encoding Progress:</label>
+        <div id="progressContainer">
+          <div id="encodeProgress"></div>
+        </div>
+      </div>
+      <p id="status"></p>
+    </div>
+    <div class="buttonContainer">
+      <div class="button" id="saveCapture">Save Capture</div>
+      <div class="button" id="close">Close</div>
+    </div>
+  </body>
+</html>
