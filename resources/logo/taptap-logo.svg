@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="logo" transform="translate(-102 -242)">
+    <circle id="Oval" cx="59.5" cy="59.5" r="59.5" transform="translate(102 242)" fill="rgba(200,216,252,0.1)"/>
+    <circle id="Oval-2" data-name="Oval" cx="51.5" cy="51.5" r="51.5" transform="translate(110 250)" fill="rgba(200,216,252,0.3)"/>
+    <circle id="Oval-3" data-name="Oval" cx="40.5" cy="40.5" r="40.5" transform="translate(121 261)" fill="rgba(200,216,252,0.6)"/>
+    <circle id="Oval-4" data-name="Oval" cx="29.5" cy="29.5" r="29.5" transform="translate(132 272)" fill="#c8d8fc"/>
+    <text id="TapTap" transform="translate(144 307)" fill="#428dff" font-size="13" font-family="SegoeUI, Segoe UI" letter-spacing="-0.05em"><tspan x="0" y="0">TapTap</tspan></text>
+  </g>
+</svg>
